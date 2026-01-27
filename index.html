@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD App Template</title>
+
+    <!-- Hubungkan CSS eksternal -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>CRUD Data</h2>
+
+      <!-- FORM CREATE / UPDATE -->
+      <form id="formData">
+        <input type="hidden" id="editIndex" />
+
+        <input type="text" id="name" placeholder="Nama" required />
+        <input type="email" id="email" placeholder="Email" required />
+
+        <button type="submit" id="btn-save">Simpan</button>
+      </form>
+
+      <!-- TABLE READ -->
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+
+        <tbody id="dataList">
+          <!-- Data di-render oleh JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- nanti JS di sini -->
+    <script src="script.js"></script>
+  </body>
+</html>
