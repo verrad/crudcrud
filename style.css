@@ -12,8 +12,8 @@ body {
 }
 
 /* Container */
-.container {
-  max-width: 900px;
+.movie-container {
+  max-width: 250px;
   margin: auto;
   background: white;
   padding: 25px;
