@@ -1,8 +1,9 @@
-$(".serch-button").on("click", function () {
+$(".search-button").on("click", function () {
   $.ajax({
     url:
       "https://www.omdbapi.com/?i=tt3896198&apikey=5eef877c&s=" +
       $(".input-keyword").val(),
+
     success: results => {
       const movies = results.Search;
       let cards = "";
@@ -37,7 +38,7 @@ function showCards(m) {
   return `
         <div class= "col-md-4 my-3">
           <div class="card">
-            <img src="${m.Poster}" class="card-img-top">
+            <img src="${m.Poster}" class="card-img-top" style="height:400px; object-fit:cover; width: 100%;>
             <div class= "card-body">
               <h5 class="card-title">${m.Title}</h5>
               <h6 class="card-subtitle mb-2 text-muted">${m.Year}</h6>

@@ -13,7 +13,7 @@ body {
 
 /* Container */
 .movie-container {
-  max-width: 250px;
+  max-width: 1500px;
   margin: auto;
   background: white;
   padding: 25px;
@@ -80,4 +80,9 @@ td {
 
 th {
   background: #eee;
+}
+
+.card-img-top {
+  max-width: 270px;
+  max-height: 400px;
 }
